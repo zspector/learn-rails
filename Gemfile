@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -21,10 +22,39 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+# gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+
+# Helps to use Rails without a database
+gem 'activerecord-tableless'
+
+# Front-end framework
+gem 'foundation-rails'
+
+# access to MailChimp API
+gem 'gibbon'
+
+# use Google Drive spreadsheets for data storage
+gem 'google_drive'
+
+#for static pages like "about"
+gem 'high_voltage'
+
+# forms made easy
+gem 'simple_form'
+
+group :development do
+  # helps when things go wrong
+  gem 'better_errors'
+
+  # supresses distracting messages in the log
+  gem 'quiet_assets'
+
+  # generates files for an application layout
+  gem 'rails_layout'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
